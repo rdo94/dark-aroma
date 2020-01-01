@@ -4,10 +4,11 @@ import { connect } from "react-redux";
 import { Link, Route, Switch, Redirect } from "react-router-dom";
 
 // PAGES
-import LandingPage from './pages/landingPage/landing.component';
+import LandingPage from "./pages/landingPage/landing.component";
+import MenuPage from  "./pages/menuPage/menu.component";
 
 // COMPONENTS
-import Header from './components/header/header.component';
+import Header from "./components/header/header.component";
 
 // CSS/SASS
 import "./sass/App.css";
@@ -18,7 +19,8 @@ class App extends React.Component {
       <div>
         <Header />
         <Switch>
-        <Route exact path="/" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
+          <Route path="/menu" component={MenuPage} />
         </Switch>
       </div>
     );
