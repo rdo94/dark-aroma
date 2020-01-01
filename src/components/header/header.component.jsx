@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { ReactComponent as Logo } from "../../assets/aroma.svg";
+import { ReactComponent as Logo } from "../../assets/aroma-cafe.svg";
 
 import {
   HeaderContainer,
@@ -22,7 +22,7 @@ const Header = () => (
       <DivOption className="option" to="/">
         CONTACT
       </DivOption>
-      <DivOption className="option" to="/">
+      <DivOption className="option" to="/login">
         SIGN IN
       </DivOption>
     </DivOptions>

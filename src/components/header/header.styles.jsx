@@ -7,7 +7,7 @@ const { primary_light, primary_dark, secondary_light, secondary_dark } = Colors;
 
 export const HeaderContainer = styled.div`
   height: 6rem;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   background-color: ${secondary_light};
