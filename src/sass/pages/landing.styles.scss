@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 
 .landing-page {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(to right,
   rgba($color-primary-light, .3),

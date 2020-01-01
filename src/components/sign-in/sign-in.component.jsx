@@ -1,10 +1,11 @@
 import React from "react";
 
-import { auth } from "../../firebase/firebase.utils";
+import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 
 import { SignInDivs, SignInButtons } from "./sign-in.styles";
 
 import FormInput from "../form-input/form-input.component";
+import CustomButton from "../custom-button/custom-button.component";
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -63,7 +64,10 @@ class SignIn extends React.Component {
             required
           />
           <SignInButtons>
-            <input type="submit" />
+            <CustomButton type="submit">Sign In</CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+              Sign In With Google
+            </CustomButton>
           </SignInButtons>
         </form>
       </SignInDivs>

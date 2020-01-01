@@ -6,28 +6,19 @@ const { primary_light, primary_dark, secondary_dark, black } = Colors;
 
 export const MenuItemDivs = styled.div`
   width: 30%;
-  height: 35rem;
+  height: 30rem;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
   border: 1px solid ${black};
+  border-radius: .8rem;
   overflow: hidden;
-  position: relative;
+  position: absolute;
 
   &:hover {
     cursor: pointer;
     opacity: 0.8;
-
-    & .background-image {
-      transform: scale(1.5);
-      transition: transform 6s ease;
-    }
-
-    & .content {
-      opacity: 0.9;
-    }
   }
 
   &.large {
@@ -35,11 +26,19 @@ export const MenuItemDivs = styled.div`
   }
 
   &:first-child {
+    left: 6rem;
+    top: 15rem;
     margin-right: 0.75rem;
   }
 
+  &:not(:first-child):not(:last-child) {
+    left: 55rem;
+    top: 15rem;
+  }
+
   &:last-child {
-    margin-left: 0.75rem;
+    left: 105rem;
+    top: 15rem;
   }
 `;
 
@@ -49,6 +48,11 @@ export const BackgroundImage = styled.div`
   position: absolute;
   background-image: url(${props => props.imageUrl});
   background-size: cover;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 4s ease-in;
+  }
 `;
 
 export const MenuItemContent = styled.div`

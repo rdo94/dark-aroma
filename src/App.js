@@ -7,7 +7,7 @@ import { Route, Switch, Redirect, useRouteMatch } from "react-router-dom";
 // PAGES
 import LandingPage from "./pages/landingPage/landing.component";
 import MenuPage from "./pages/menuPage/menu.component";
-import SignInPage from "./pages/signInPage/sign-in.component";
+import SignInPage from "./pages/signInPage/sign-in-page.component";
 
 // COMPONENTS
 import Header from "./components/header/header.component";

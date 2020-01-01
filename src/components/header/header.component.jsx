@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { ReactComponent as Logo } from "../../assets/aroma.svg";
+import { ReactComponent as Logo } from "../../assets/aroma-cafe.svg";
 
 import {
   HeaderContainer,
