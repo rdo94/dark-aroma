@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import '../../sass/pages/shop.styles.scss';
+import { ShopPageContainer } from "./shop.styles";
 
-const Shop = () => (
-    <div className="shop-page">
-    </div>
-)
+const ShopPage = () => (
+  <ShopPageContainer style={{
+    backgroundImage: 'url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-free-coffee-wallpaper-768x480.jpg)',
+    backgroundSize: 'cover'
+  }}>
+    <div></div>
+  </ShopPageContainer>
+);
 
-export default Shop;
+export default ShopPage;

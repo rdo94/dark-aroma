@@ -5,7 +5,7 @@ export const Colors = {
     secondary_dark: '#855b08',
     black: '#000',
     white: '#fff',
-    light_grey: 'e7e7e7',
-    google_light: '357ae8',
-    google_dark: '4285f4'
+    light_grey: '#e7e7e7',
+    google_light: '#357ae8',
+    google_dark: '#4285f4',
 }

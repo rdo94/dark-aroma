@@ -1,19 +1,22 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
-import SignIn from '../../components/sign-in/sign-in.component';
+import SignIn from "../../components/sign-in/sign-in.component";
 
-// SASS for SignIn page and the SignUp box
-import '../../sass/pages/sign-in.styles.scss';
+import { SignInPageContainer, SignUpBox, SignUpButton } from './sign-in-page.styles';
 
-const SignInSignUpPage = () => (
-    <div className='sign-in'>
-        <SignIn />
-        <div className='sign-up'>
-            <h2>Don't have an account?</h2>
-            <a href='#'>Sign Up</a>
-        </div>
-    </div>
+const SignInPage = () => (
+  <SignInPageContainer style={{
+    backgroundImage: 'url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-free-coffee-wallpaper-768x480.jpg)',
+    backgroundSize: 'cover'
+  }}>
+    <SignIn />
+    <SignUpBox>
+      <h2>Don't have an account?</h2>
+      <SignUpButton to="/register">
+        Sign Up
+      </SignUpButton>
+    </SignUpBox>
+  </SignInPageContainer>
 );
 
-export default SignInSignUpPage;
+export default SignInPage;

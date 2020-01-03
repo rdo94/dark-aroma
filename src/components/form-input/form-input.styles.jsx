@@ -1,6 +1,6 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-import { Colors } from "../../data/variables";
+import { Colors } from "../../data/color";
 
 const { white, black } = Colors;
 

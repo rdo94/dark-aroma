@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import { Colors } from "../../data/variables";
+import { Colors } from "../../data/color";
 
 const { primary_light, primary_dark, secondary_light, secondary_dark } = Colors;
 
