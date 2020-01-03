@@ -6,16 +6,17 @@ import { Colors } from "../../data/color";
 const { primary_light, primary_dark, secondary_light, secondary_dark } = Colors;
 
 export const HeaderContainer = styled.div`
-  height: 6rem;
-  width: 100vw;
+  height: 8vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: ${secondary_light};
 `;
 
 export const LogoContainer = styled(Link)`
-  height: 70%;
-  padding: 1rem;
+  height: 90%;
+  width: 20%;
+  padding: .5rem;
   background-image: linear-gradient(
     to right,
     ${primary_light},
@@ -32,7 +33,7 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;

@@ -5,44 +5,40 @@ import { Colors } from "../../data/color";
 const { primary_light, secondary_light } = Colors;
 
 export const CollectionItemContainer = styled.div`
-  width: 22vw;
+  width: 25%;
+  height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
-  height: 35rem;
-  align-items: center;
-  position: relative;
+  padding: .5rem;
 `;
 
 export const ItemImageContainer = styled.div`
   width: 100%;
-  height: 70%;
-  margin: 0 auto;
+  max-height: 60%;
+  margin-bottom: 1rem;
 
   .collection-image {
-     max-width: 70%;
-     max-height: 70%;
+     max-width: 50%;
   }
 `;
 
 export const ItemDescription = styled.div`
-  width: 100%;
-  height: 15%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 60%;
+  height: 40%;
   font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
   border: .2rem solid ${secondary_light};
   background-color: ${primary_light};
   border-radius: .8rem;
 
   .name {
       text-transform: uppercase;
-      width: 80%;
-      margin-bottom: 1.5rem;
+      width: 90%;
   }
 
   .price {
-      width: 20%;
+      width: 10%;
   }
 `;

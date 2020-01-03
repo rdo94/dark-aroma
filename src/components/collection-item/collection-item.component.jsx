@@ -9,7 +9,7 @@ const CollectionItem = ({ item: {name, imageUrl, price} }) => (
         </ItemImageContainer>
         <ItemDescription>
             <span className="name">{name}</span>
-            <span className="price">${price}</span>
+            <span className="price">{price}</span>
         </ItemDescription>
         </CollectionItemContainer>
 );

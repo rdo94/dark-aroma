@@ -1,27 +1,30 @@
 import React from "react";
 
+import Directory from '../../components/directory/directory.component';
+
+
 import {
   LandingPageContainer,
   LandingHeaderContainer,
-  LandingButtonContainer,
-  LandingButton
+  LandingHeaderTitle,
+  LandingHeaderSubtitle
 } from "./landing.styles";
 
 const LandingPage = () => (
   <LandingPageContainer style={{
     backgroundImage: 'url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-free-coffee-wallpaper-768x480.jpg)',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat'
   }}>
     <LandingHeaderContainer>
-      <h1 className="header">Dark Aroma</h1>
-      <span className="details">The home for all coffee enthusiast</span>
+      <LandingHeaderTitle>
+      Dark Aroma
+      </LandingHeaderTitle>
+      <LandingHeaderSubtitle>
+      The home for all coffee enthusiast
+      </LandingHeaderSubtitle>
     </LandingHeaderContainer>
-    <LandingButtonContainer>
-      <LandingButton to="/menu">
-        <span className="shop-text">View Our Selections</span>
-        <span className="shop-arrow">&#x27A1;</span>
-      </LandingButton>
-    </LandingButtonContainer>
+    <Directory/>
   </LandingPageContainer>
 );
 
