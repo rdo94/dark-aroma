@@ -2,7 +2,7 @@ import React from "react";
 
 import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 
-import { SignInDivs, SignInButtons } from "./sign-in.styles";
+import { SignInContainer, SignInButtons } from "./sign-in.styles";
 
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
@@ -44,7 +44,7 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <SignInDivs>
+      <SignInContainer>
         <h2>Welcome to Dark Aroma</h2>
         <form onSubmit={this.handleSubmit}>
           <FormInput
@@ -70,7 +70,7 @@ class SignIn extends React.Component {
             </CustomButton>
           </SignInButtons>
         </form>
-      </SignInDivs>
+      </SignInContainer>
     );
   }
 }

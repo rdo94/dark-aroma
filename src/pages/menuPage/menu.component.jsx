@@ -1,13 +1,16 @@
 import React from 'react';
 
-import '../../sass/pages/menu.styles.scss';
+import { MenuPageContainer } from './menu.styles';
 
 import Directory from '../../components/directory/directory.component';
 
-const Menu = () => (
-    <div className="menu-page">
+const MenuPage = () => (
+    <MenuPageContainer style={{
+        backgroundImage: 'url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-free-coffee-wallpaper-768x480.jpg)',
+        backgroundSize: 'cover'
+      }}>
         <Directory />
-    </div>
+    </MenuPageContainer>
 )
 
-export default Menu;
+export default MenuPage;

@@ -1,32 +1,46 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+
+import { auth } from '../../firebase/firebase.utils';
+import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import { ReactComponent as Logo } from "../../assets/aroma-cafe.svg";
 
 import {
   HeaderContainer,
   LogoContainer,
-  DivOptions,
-  DivOption
+  OptionsContainer,
+  OptionLink
 } from "./header.styles.jsx";
 
-const Header = () => (
+const Header = ({ currentUser }) => (
   <HeaderContainer>
     <LogoContainer to='/'>
       <Logo className="logo" />
     </LogoContainer>
-    <DivOptions>
-      <DivOption className="option" to="/menu">
+    <OptionsContainer>
+      <OptionLink className="option" to="/menu">
         SHOP
-      </DivOption>
-      <DivOption className="option" to="/">
+      </OptionLink>
+      <OptionLink className="option" to="/">
         CONTACT
-      </DivOption>
-      <DivOption className="option" to="/login">
-        SIGN IN
-      </DivOption>
-    </DivOptions>
+      </OptionLink>
+      {
+        currentUser ?
+          (<OptionLink as="div" onClick={() => auth.signOut()}>
+            {" "}
+            SIGN OUT
+           </OptionLink>)
+          :
+          (<OptionLink to="/login">SIGN IN</OptionLink>)
+      }
+    </OptionsContainer>
   </HeaderContainer>
 );
 
-export default Header;
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser
+})
+
+export default connect(mapStateToProps)(Header);

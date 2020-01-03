@@ -1,37 +1,50 @@
 import styled, { css } from "styled-components";
 
+import { Colors } from "../../data/color";
+
+const {
+  primary_light,
+  primary_dark,
+  secondary_light,
+  secondary_dark,
+  google_light,
+  google_dark,
+  white
+} = Colors;
+
 const buttonStyles = css`
-  background-color: black;
-  color: white;
-  border: none;
+  background-color: ${primary_light};
+  color: ${secondary_light};
+  border: .1rem solid ${secondary_dark};
 
   &:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    background-color: ${primary_dark};
+    color: ${secondary_dark};
+    border: 0.1rem solid ${secondary_dark};
   }
 `;
 
 const invertedButtonStyles = css`
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+  background-color: ${secondary_light};
+  color: ${primary_light};
+  border: 0.1rem solid ${primary_light};
 
-    &:hover {
-      background-color: black;
-      color: white;
-      border: none;
-    }
+  &:hover {
+    background-color: ${secondary_dark};
+    color: ${primary_dark};
+    border: none;
+  }
 `;
 
 const googleSignInStyles = css`
-    background-color: #4285f4;
-    color: white;
+  background-color: ${google_light};
+  color: ${white};
+  border: none;
 
-    &:hover {
-      background-color: #357ae8;
-      border: none;
-    }
+  &:hover {
+    background-color: ${google_dark};
+    border: none;
+  }
 `;
 
 const getButtonStyles = props => {
@@ -43,13 +56,13 @@ const getButtonStyles = props => {
 };
 
 export const CustomButtonContainer = styled.button`
-  min-width: 165px;
+  min-width: 16.5rem;
   width: auto;
-  height: 50px;
-  letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  height: 5rem;
+  letter-spacing: 0.05rem;
+  line-height: 5rem;
+  padding: 0 3.5rem 0 3.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: bolder;
   cursor: pointer;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import { Colors } from "../../data/variables";
+import { Colors } from "../../data/color";
 
 const { primary_light, primary_dark, secondary_light, secondary_dark } = Colors;
 
@@ -31,7 +31,7 @@ export const LogoContainer = styled(Link)`
   }
 `;
 
-export const DivOptions = styled.div`
+export const OptionsContainer = styled.div`
   width: 50%;
   height: 100%;
   display: flex;
@@ -40,7 +40,7 @@ export const DivOptions = styled.div`
   font-size: 2rem;
 `;
 
-export const DivOption = styled(Link)`
+export const OptionLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
   text-decoration: none;
