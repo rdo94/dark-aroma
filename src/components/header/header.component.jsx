@@ -20,7 +20,7 @@ const Header = ({ currentUser }) => (
       <Logo className="logo" />
     </LogoContainer>
     <OptionsContainer>
-      <OptionLink className="option" to="/menu">
+      <OptionLink className="option" to="/shop">
         SHOP
       </OptionLink>
       <OptionLink className="option" to="/">

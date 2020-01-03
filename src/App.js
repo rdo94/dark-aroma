@@ -6,7 +6,6 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 // PAGES
 import LandingPage from "./pages/landingPage/landing.component";
-import MenuPage from "./pages/menuPage/menu.component";
 import ShopPage from "./pages/shopPage/shop.component";
 import SignInPage from "./pages/signInPage/sign-in-page.component";
 import SignUpPage from "./pages/signUpPage/sign-up-page.component";
@@ -21,8 +20,8 @@ import { setCurrentUser } from "./redux/user/user.actions";
 // SELECTORS
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
-// CSS
-import "./App.css";
+// SCSS
+import "./App.scss";
 
 class App extends React.Component {
   unsubscribeFromAuth = null;
@@ -58,7 +57,6 @@ class App extends React.Component {
         <Header />
         <Switch>
           <Route exact path="/" component={LandingPage} />
-          <Route path="/menu" component={MenuPage} />
           <Route path="/shop" component={ShopPage} />
           <Route
             path="/login"

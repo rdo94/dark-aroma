@@ -4,72 +4,53 @@ import { Colors } from "../../data/color";
 
 const { primary_light, primary_dark, secondary_dark, black } = Colors;
 
-export const MenuItemDivs = styled.div`
-  width: 30%;
-  height: 30rem;
+export const MenuItemContainer = styled.div`
+  width: 33%;
+  height: 70%;
   display: flex;
+  margin-top: 3rem;
+  margin-left: 1rem;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-evenly;
   border: 1px solid ${black};
   border-radius: .8rem;
   overflow: hidden;
-  position: absolute;
 
   &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
-
-  &.large {
-    height: 380px;
-  }
-
-  &:first-child {
-    left: 6rem;
-    top: 15rem;
-    margin-right: 0.75rem;
-  }
-
-  &:not(:first-child):not(:last-child) {
-    left: 55rem;
-    top: 15rem;
-  }
-
-  &:last-child {
-    left: 105rem;
-    top: 15rem;
-  }
 `;
 
-export const BackgroundImage = styled.div`
+export const BackgroundImageContainer = styled.div`
   width: 100%;
   height: 100%;
-  position: absolute;
   background-image: url(${props => props.imageUrl});
   background-size: cover;
 
   &:hover {
-    transform: scale(1.1);
-    transition: transform 4s ease-in;
+    transform: scale(1.05);
+    transition: transform 2s ease-in;
   }
 `;
 
-export const MenuItemContent = styled.div`
+export const ContentContainer = styled.div`
+  width: 15%;
   height: 9rem;
   padding: 0 2.5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 1px solid ${secondary_dark};
   background-color: ${primary_dark};
   opacity: 0.7;
   position: absolute;
-
-  .title {
-    color: ${black};
-    text-transform: capitalize;
-    font-size: 5rem;
   }
+`;
+
+export const ContentTitle = styled.span`
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: ${secondary_dark};
 `;
