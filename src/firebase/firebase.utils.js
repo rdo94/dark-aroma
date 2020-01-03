@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
 
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyABIqy44Nm8njZr1hsnxyvepA4EJsJk3xo",
   authDomain: "dark-aroma.firebaseapp.com",
   databaseURL: "https://dark-aroma.firebaseio.com",
@@ -31,14 +31,14 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         ...additionalData
       });
     } catch (error) {
-      console.log("Error creating user", error.message);
+      console.log("error creating user", error.message);
     }
   }
 
   return userRef;
 };
 
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 //* AUTHENTICATION + FIRESTORE MODULES
 export const auth = firebase.auth();

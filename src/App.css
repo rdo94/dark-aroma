@@ -9,12 +9,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to right,
-  rgba(#f5f2ab, .3),
-  rgba(#d9d096, .4)),
-  url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-free-coffee-wallpaper-768x480.jpg);
-  background-size: cover;
-  background-blend-mode: screen;
+
 }
 
 a {
