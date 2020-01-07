@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 import { Colors } from "../../data/color";
 
-const { primary_light, secondary_light } = Colors;
+const { primary_light, secondary_light, black, white } = Colors;
 
 export const CollectionItemContainer = styled.div`
-  width: 25%;
+  width: 35%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: .5rem;
 `;
 
 export const ItemImageContainer = styled.div`
@@ -26,19 +25,22 @@ export const ItemImageContainer = styled.div`
 export const ItemDescription = styled.div`
   width: 60%;
   height: 40%;
-  font-size: 1.8rem;
   display: flex;
   flex-direction: column;
   border: .2rem solid ${secondary_light};
-  background-color: ${primary_light};
+  background-color: ${black};
   border-radius: .8rem;
+  color: ${primary_light};
+  padding: 1rem 2rem;
 
   .name {
       text-transform: uppercase;
-      width: 90%;
+      font-size: 1.6rem;
+      display: block;
   }
 
   .price {
-      width: 10%;
+      font-size: 1.4rem;
+      display: block;
   }
 `;

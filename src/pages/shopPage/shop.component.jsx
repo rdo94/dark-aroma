@@ -8,14 +8,7 @@ import CollectionOverview from "../../components/collection-overview/collection-
 import CollectionPage from '../collectionPage/collection.component';
 
 const ShopPage = ({ match }) => (
-  <ShopPageContainer
-    style={{
-      backgroundImage:
-        "url(https://www.pixelstalk.net/wp-content/uploads/images1/HD-free-coffee-wallpaper-768x480.jpg)",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat"
-    }}
-  >
+  <ShopPageContainer>
     <Route exact path={`${match.path}`} component={CollectionOverview} />
     <Route path={`${match.path}/:collectionId`} component={CollectionPage} />
   </ShopPageContainer>

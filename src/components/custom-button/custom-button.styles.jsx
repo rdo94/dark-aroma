@@ -9,12 +9,13 @@ const {
   secondary_dark,
   google_light,
   google_dark,
-  white
+  white,
+  black
 } = Colors;
 
 const buttonStyles = css`
   background-color: ${primary_light};
-  color: ${secondary_light};
+  color: ${black};
   border: .1rem solid ${secondary_dark};
 
   &:hover {

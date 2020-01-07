@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Colors } from "../../data/color";
 
-const { secondary_light, primary_dark } = Colors;
+const { secondary_light, primary_dark, black } = Colors;
 
 export const SignUpContainer = styled.div`
   width: 55rem;
@@ -12,7 +12,7 @@ export const SignUpContainer = styled.div`
   margin: 5rem auto;
   flex-direction: column;
   justify-content: space-around;
-  background-color: ${secondary_light};
+  background-color: ${black};
   border: 0.1rem solid ${primary_dark};
   border-radius: 0.5rem;
 `;

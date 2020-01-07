@@ -12,7 +12,7 @@ export const SignInContainer = styled.div`
   margin: 5rem auto;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: ${secondary_light};
+  background-color: ${black};
   border: 0.1rem solid ${primary_dark};
   border-radius: 0.5rem;
 

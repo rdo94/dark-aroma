@@ -6,7 +6,7 @@ const { primary_light, primary_dark, secondary_dark, black } = Colors;
 
 export const MenuItemContainer = styled.div`
   width: 33%;
-  height: 70%;
+  height: 60%;
   display: flex;
   margin-top: 3rem;
   margin-left: 1rem;
@@ -16,7 +16,7 @@ export const MenuItemContainer = styled.div`
   border-radius: .8rem;
   overflow: hidden;
 
-  &:hover {
+  &:hover .background-image {
     cursor: pointer;
     opacity: 0.8;
   }

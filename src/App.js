@@ -1,26 +1,26 @@
-// LIBRARIES
+//* LIBRARIES
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-// PAGES
+//* PAGES
 import LandingPage from "./pages/landingPage/landing.component";
 import ShopPage from "./pages/shopPage/shop.component";
 import SignInPage from "./pages/signInPage/sign-in-page.component";
 import SignUpPage from "./pages/signUpPage/sign-up-page.component";
 
-// COMPONENTS
+//* COMPONENTS
 import Header from "./components/header/header.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
-// ACTIONS
+//* ACTIONS
 import { setCurrentUser } from "./redux/user/user.actions";
 
-// SELECTORS
+//* SELECTORS
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
-// SCSS
+//* SCSS
 import "./App.scss";
 
 class App extends React.Component {
