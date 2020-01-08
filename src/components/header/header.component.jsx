@@ -10,7 +10,6 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 import {
   HeaderContainer,
   LogoContainer,
-  Logo,
   OptionsContainer,
   OptionLink
 } from "./header.styles.jsx";
@@ -18,13 +17,11 @@ import {
 const Header = ({ currentUser }) => (
   <HeaderContainer>
     <LogoContainer to="/">
-      <Logo>
         <img
-          src="../../assets/coffee-espresso.png"
+          src="https://banner2.cleanpng.com/20180228/gzw/kisspng-coffee-espresso-cafe-logo-coffee-vector-material-5a9785e220e1d5.5290943815198796501347.jpg"
           alt="Coffee Espresso"
           className="logo"
         />
-      </Logo>
     </LogoContainer>
     <OptionsContainer>
       <OptionLink className="option" to="/shop">

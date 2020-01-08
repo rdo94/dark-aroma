@@ -15,7 +15,7 @@ const SHOP_DATA = {
         id: 2,
         name: "Caffe Latte",
         imageUrl:
-          "https://www.caffesociety.co.uk/assets/recipe-images/latte-small.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Cappuccino_Chiang_Mai.JPG/800px-Cappuccino_Chiang_Mai.JPG",
         price: 3.55
       },
       {
@@ -92,7 +92,7 @@ const SHOP_DATA = {
         id: 12,
         name: "Lemon Blueberry Cheesecake",
         imageUrl:
-          "https://www.lifeloveandsugar.com/wp-content/uploads/2018/08/Lemon-Blueberry-Cheesecake4-1.jpg",
+          "https://img.sndimg.com/food/image/upload/v1/img/recipes/24/71/45/picDzo8f8.jpg",
         price: 4.65
       },
       {
@@ -100,14 +100,14 @@ const SHOP_DATA = {
         name: "Buttery Chocolate Croissant",
         imageUrl:
           "https://parentingchaos.com/wp-content/uploads/2014/05/coolbrew-mocha-crossiants-1.jpg",
-        price: 4.65
+        price: 4.95
       },
       {
         id: 14,
-        name: "Banana Almond Nut Bread",
+        name: "Banana Caramel Nut Bread",
         imageUrl:
-          "https://natashaskitchen.com/wp-content/uploads/2018/05/Banana-Bread-Recipe-7-600x900.jpg",
-        price: 4.65
+          "https://hannahandfitness.com/wp-content/uploads/2017/08/banana-caramel-bread-front-view.jpg",
+        price: 3.95
       },
       {
         id: 15,
@@ -149,7 +149,7 @@ const SHOP_DATA = {
         name: "Santo Domingo Ground Coffee",
         imageUrl:
           "https://dofeli.com/wp-content/uploads/2016/05/Watermarked-squared-small-13.jpg",
-        price: 599
+        price: 25.99
       },
       {
         id: 20,

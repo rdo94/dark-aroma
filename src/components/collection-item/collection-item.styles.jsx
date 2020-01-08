@@ -13,34 +13,36 @@ export const CollectionItemContainer = styled.div`
 `;
 
 export const ItemImageContainer = styled.div`
-  width: 100%;
-  max-height: 60%;
-  margin-bottom: 1rem;
+  width: 80%;
+  height: 70%;
 
   .collection-image {
-     max-width: 50%;
+    border: 1px solid ${primary_light};
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
   }
 `;
 
 export const ItemDescription = styled.div`
-  width: 60%;
+  width: 80%;
   height: 40%;
   display: flex;
   flex-direction: column;
-  border: .2rem solid ${secondary_light};
+  border: 0.2rem solid ${secondary_light};
   background-color: ${black};
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   color: ${primary_light};
   padding: 1rem 2rem;
 
   .name {
-      text-transform: uppercase;
-      font-size: 1.6rem;
-      display: block;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    display: block;
   }
 
   .price {
-      font-size: 1.4rem;
-      display: block;
+    font-size: 1.4rem;
+    display: block;
   }
 `;

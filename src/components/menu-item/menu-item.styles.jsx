@@ -2,21 +2,21 @@ import styled from "styled-components";
 
 import { Colors } from "../../data/color";
 
-const { primary_light, primary_dark, secondary_dark, black } = Colors;
+const { primary_light, black, white, light_gray } = Colors;
 
 export const MenuItemContainer = styled.div`
   width: 33%;
-  height: 60%;
+  height: 90%;
+  margin: 0 1rem;
   display: flex;
-  margin-top: 3rem;
-  margin-left: 1rem;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
-  border: 1px solid ${black};
-  border-radius: .8rem;
   overflow: hidden;
+  border: 0.4px solid ${primary_light};
+  border-radius: 0.8rem;
+  background-color: ${black};
 
-  &:hover .background-image {
+  &:hover {
     cursor: pointer;
     opacity: 0.8;
   }
@@ -24,7 +24,9 @@ export const MenuItemContainer = styled.div`
 
 export const BackgroundImageContainer = styled.div`
   width: 100%;
-  height: 100%;
+  height: 60%;
+  border: 0.4px solid ${primary_light};
+  border-radius: 0.8rem;
   background-image: url(${props => props.imageUrl});
   background-size: cover;
 
@@ -35,22 +37,24 @@ export const BackgroundImageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  width: 15%;
-  height: 9rem;
-  padding: 0 2.5rem;
+  width: 100%;
+  height: 40%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid ${secondary_dark};
-  background-color: ${primary_dark};
-  opacity: 0.7;
-  position: absolute;
-  }
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem 2rem;
+
+  color: ${primary_light};
 `;
 
 export const ContentTitle = styled.span`
   font-size: 2.5rem;
   font-weight: bold;
   text-transform: capitalize;
-  color: ${secondary_dark};
+`;
+
+export const ContentSubtitle = styled.span`
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-family: Baskerville, sans-serif;
 `;

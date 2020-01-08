@@ -5,20 +5,18 @@ import {
   MenuItemContainer,
   BackgroundImageContainer,
   ContentContainer,
-  ContentTitle
+  ContentTitle,
+  ContentSubtitle
 } from "./menu-item.styles";
 
-const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
+const MenuItem = ({ title, description, imageUrl, history, linkUrl, match }) => (
   <MenuItemContainer
-    size={size}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
   >
-    <BackgroundImageContainer
-      className='background-image'
-      imageUrl={imageUrl}
-    />
-    <ContentContainer className='content'>
+    <BackgroundImageContainer imageUrl={imageUrl}/>
+    <ContentContainer>
       <ContentTitle>{title.toUpperCase()}</ContentTitle>
+      <ContentSubtitle>{description}</ContentSubtitle>
     </ContentContainer>
   </MenuItemContainer>
 );

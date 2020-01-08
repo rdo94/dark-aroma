@@ -7,5 +7,7 @@ export const Colors = {
   white: "#fff",
   light_grey: "#e7e7e7",
   google_light: "#357ae8",
-  google_dark: "#4285f4"
+  google_dark: "#4285f4",
+  light_red_1: "#ff1100",
+  light_green_1: "#1fde7e",
 };

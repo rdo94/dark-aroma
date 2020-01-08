@@ -13,25 +13,31 @@ const {
 } = Colors;
 
 export const HeaderContainer = styled.div`
-  height: 8vh;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: ${black};
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 `;
 
 export const LogoContainer = styled(Link)`
-  height: 90%;
-  width: 5%;
-  padding: 0.5rem;
-  ${'' /* background-color: ${primary_light}; */}
+  height: 100%;
+  width: 6%;
+  padding: 1rem;
   text-align: center;
-`;
 
-export const Logo = styled.div`
-  margin-top: -2.5rem;
-  height: 9rem;
-  width: 9rem;
+  .logo {
+    margin-top: -.5rem;
+    background-color: transparent;
+    border: .5px solid ${primary_light};
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+  }
 `;
 
 export const OptionsContainer = styled.div`
