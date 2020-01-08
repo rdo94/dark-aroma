@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { Route, Switch, Redirect } from "react-router-dom";
 
+//* FIREBASE
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+
 //* PAGES
 import LandingPage from "./pages/landingPage/landing.component";
 import ShopPage from "./pages/shopPage/shop.component";
@@ -12,7 +15,7 @@ import SignUpPage from "./pages/signUpPage/sign-up-page.component";
 
 //* COMPONENTS
 import Header from "./components/header/header.component";
-import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
+import Footer from "./components/footer/footer.component";
 
 //* ACTIONS
 import { setCurrentUser } from "./redux/user/user.actions";
@@ -54,7 +57,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <Header />
+        <Header/>
         <Switch>
           <Route exact path="/" component={LandingPage} />
           <Route path="/shop" component={ShopPage} />
@@ -67,6 +70,7 @@ class App extends React.Component {
             render={() => (currentUser ? <Redirect to="/" /> : <SignUpPage />)}
           />
         </Switch>
+        <Footer/>
       </div>
     );
   }
