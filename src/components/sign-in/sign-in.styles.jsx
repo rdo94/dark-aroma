@@ -9,7 +9,7 @@ export const SignInContainer = styled.div`
   height: 55rem;
   display: flex;
   padding: 2.5rem;
-  margin: 5rem auto;
+  margin: 0 auto;
   flex-direction: column;
   justify-content: space-evenly;
   background-color: ${black};

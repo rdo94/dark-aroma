@@ -10,6 +10,7 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: ${black};
 `;
 
@@ -20,5 +21,6 @@ export const FooterCopyright = styled.div`
     height: 80%;
     width: 100%;
     padding: 1rem 3rem;
+    text-align: center;
   }
 `;

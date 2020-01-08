@@ -13,7 +13,7 @@ const {
 } = Colors;
 
 export const HeaderContainer = styled.div`
-  height: 10%;
+  height: 8%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   height: 100%;
-  width: 9rem;
+  width: 8rem;
   padding: 1rem;
   text-align: center;
 
@@ -46,7 +46,7 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 2rem;
+  font-size: 1.8rem;
 `;
 
 export const OptionLink = styled(Link)`

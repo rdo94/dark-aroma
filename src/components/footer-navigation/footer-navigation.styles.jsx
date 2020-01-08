@@ -15,8 +15,8 @@ const {
 
 export const FooterNavigationContainer = styled.div`
   padding: 1rem 2rem;
-  width: 100%;
-  height: 30%;
+  width: 60%;
+  height: 40%;
 `;
 
 export const FooterNavigationGroup = styled.ul`
@@ -29,7 +29,7 @@ export const FooterNavigationGroup = styled.ul`
 export const FooterNavigationLink = styled.li`
   a {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .facebook-icon {

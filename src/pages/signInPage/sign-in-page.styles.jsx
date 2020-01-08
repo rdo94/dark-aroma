@@ -11,7 +11,7 @@ export const SignInPageContainer = styled.div`
   justify-content: space-around;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin: 10rem auto;
 `;
 
 export const SignUpBox = styled.div`

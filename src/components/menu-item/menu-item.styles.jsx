@@ -29,11 +29,6 @@ export const BackgroundImageContainer = styled.div`
   border-radius: 0.8rem;
   background-image: url(${props => props.imageUrl});
   background-size: cover;
-
-  &:hover {
-    transform: scale(1.05);
-    transition: transform 2s ease-in;
-  }
 `;
 
 export const ContentContainer = styled.div`

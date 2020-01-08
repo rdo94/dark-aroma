@@ -6,6 +6,7 @@ const CollectionItem = ({ item: {name, imageUrl, price} }) => (
     <CollectionItemContainer>
         <ItemImageContainer>
             <img className='collection-image' src={imageUrl} />
+            <figcaption className="collection-caption">View details</figcaption>
         </ItemImageContainer>
         <ItemDescription>
             <span className="name">{name}</span>

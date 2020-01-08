@@ -9,8 +9,8 @@ export const CollectionPageContainer = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin: 1rem 1rem auto;
-  padding: .5rem;
+  margin: 15rem 0;
+  padding: 1rem 2rem;
 `;
 
 export const CollectionTitle = styled.h2`
