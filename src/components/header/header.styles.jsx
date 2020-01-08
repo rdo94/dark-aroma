@@ -26,7 +26,7 @@ export const HeaderContainer = styled.div`
 
 export const LogoContainer = styled(Link)`
   height: 100%;
-  width: 6%;
+  width: 9rem;
   padding: 1rem;
   text-align: center;
 
@@ -50,7 +50,7 @@ export const OptionsContainer = styled.div`
 `;
 
 export const OptionLink = styled(Link)`
-  padding: 10px 15px;
+  padding: 1rem 2rem;
   cursor: pointer;
   text-decoration: none;
   color: ${primary_light};
