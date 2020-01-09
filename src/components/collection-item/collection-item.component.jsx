@@ -1,18 +1,42 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import { CollectionItemContainer, ItemImageContainer, ItemDescription} from './collection-item.styles';
+import { addItem } from "../../redux/cart/cart.actions";
 
-const CollectionItem = ({ item: {name, imageUrl, price} }) => (
-    <CollectionItemContainer>
-        <ItemImageContainer>
-            <img className='collection-image' src={imageUrl} />
-            <figcaption className="collection-caption">View details</figcaption>
-        </ItemImageContainer>
-        <ItemDescription>
-            <span className="name">{name}</span>
-            <span className="price">{price}</span>
-        </ItemDescription>
-        </CollectionItemContainer>
-);
+import {
+  CollectionItemContainer,
+  ItemImageContainer,
+  ItemImage,
+  ItemDescription,
+  NameContainer,
+  PriceContainer,
+  ButtonContainer,
+  ViewButton,
+  AddButton
+} from "./collection-item.styles";
 
-export default CollectionItem;
+const CollectionItem = ({ item, addItem }) => {
+  const { name, imageUrl, price } = item;
+
+  return( <CollectionItemContainer>
+    <ItemImageContainer>
+      <ItemImage src={imageUrl} />
+      <ButtonContainer>
+        <ViewButton inverted>View details</ViewButton>
+        <AddButton inverted onClick={() => addItem(item)}>Add to Cart</AddButton>
+      </ButtonContainer>
+    </ItemImageContainer>
+    <ItemDescription>
+      <NameContainer>{name}</NameContainer>
+      <PriceContainer>{price}</PriceContainer>
+    </ItemDescription>
+  </CollectionItemContainer>)
+
+};
+
+const mapDispatchToProps = dispatch => ({
+  addItem: item => dispatch(addItem(item))
+});
+
+export default connect(null, mapDispatchToProps)(CollectionItem);
