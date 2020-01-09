@@ -14,10 +14,9 @@ export const CartItemContainer = styled.div`
 export const CartItemImage = styled.img.attrs(props => ({
     src: props.src,
     alt: props.alt
-}))
-`
+}))`
   width: 30%;
-  border: .2px solid ${primary_light}
+  border: .2px solid ${primary_light};
   border-radius: 50%;
 `;
 
