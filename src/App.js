@@ -12,6 +12,7 @@ import LandingPage from "./pages/landingPage/landing.component";
 import ShopPage from "./pages/shopPage/shop.component";
 import SignInPage from "./pages/signInPage/sign-in-page.component";
 import SignUpPage from "./pages/signUpPage/sign-up-page.component";
+import CheckoutPage from "./pages/checkoutPage/checkout.component";
 
 //* COMPONENTS
 import Header from "./components/header/header.component";
@@ -59,16 +60,23 @@ class App extends React.Component {
       <div>
         <Header/>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/shop" component={ShopPage} />
+          <Route exact
+            path="/"
+            component={LandingPage} />
           <Route
+            path="/shop"
+            component={ShopPage} />
+          <Route exact
             path="/login"
             render={() => (currentUser ? <Redirect to="/" /> : <SignInPage />)}
           />
-          <Route
+          <Route exact
             path="/register"
             render={() => (currentUser ? <Redirect to="/" /> : <SignUpPage />)}
           />
+          <Route exact
+            path="/checkout"
+            component={CheckoutPage} />
         </Switch>
         <Footer/>
       </div>
