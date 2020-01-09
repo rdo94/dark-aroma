@@ -20,7 +20,7 @@ const buttonStyles = css`
 
   &:hover {
     background-color: ${primary_dark};
-    color: ${secondary_dark};
+    color: ${black};
     border: 0.1rem solid ${secondary_dark};
   }
 `;
@@ -31,8 +31,8 @@ const invertedButtonStyles = css`
   border: 0.1rem solid ${primary_light};
 
   &:hover {
-    background-color: ${secondary_dark};
-    color: ${primary_dark};
+    background-color: ${primary_light};
+    color: ${black};
     border: none;
   }
 `;
