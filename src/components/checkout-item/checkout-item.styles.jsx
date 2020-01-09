@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Colors } from "../../data/color";
 
-const { primary_light, black, white } = Colors;
+const { primary_light, primary_dark, light_red_1, light_green_1 } = Colors;
 
 export const CheckoutItemContainer = styled.div`
   width: 95%;
@@ -25,7 +25,7 @@ export const Image = styled.img.attrs(props => ({
   alt: props.alt
 }))`
   border: 0.1px solid ${primary_light};
-  border-radius: 50%;
+  border-radius: 1rem;
   width: 100%;
   height: 100%;
 `;
@@ -39,14 +39,34 @@ export const QuantityContainer = styled(TextContainer)`
   justify-content: space-evenly;
   align-items: flex-start;
 
-  .minus-icon,
-  .plus-icon {
+  i {
       cursor: pointer;
       margin-top: .3rem;
+      transition: all .2s;
+
+      &:hover {
+          transform: translateY(-.3rem) scale(1.01);
+
+          &:first-child {
+            color: ${light_red_1};
+          }
+
+          &:last-child {
+            color: ${light_green_1};
+          }
+      }
   }
+
 `;
 
 export const RemoveButtonContainer = styled.div`
-  padding-left: 1.2rem;
+  text-align: center;
   cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+      color: ${primary_dark};
+      transform: translateY(-.3rem) scale(1.01);
+      box-shadow: 0 1rem 3rem rgba(black, .2);
+  }
 `;
