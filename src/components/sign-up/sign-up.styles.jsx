@@ -9,9 +9,9 @@ export const SignUpContainer = styled.div`
   height: 55rem;
   display: flex;
   padding: 2.5rem;
-  margin: 5rem auto;
+  margin: 10rem auto;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: ${black};
   border: 0.1rem solid ${primary_dark};
   border-radius: 0.5rem;

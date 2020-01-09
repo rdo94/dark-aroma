@@ -18,7 +18,7 @@ export const SignInBox = styled.div`
   width: 38rem;
   height: 10rem;
   display: flex;
-  margin: 0.5rem auto;
+  margin: 0 auto 5rem auto;
   justify-content: space-around;
   align-items: center;
   background-color: ${black};

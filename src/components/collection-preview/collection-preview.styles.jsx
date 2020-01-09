@@ -7,7 +7,7 @@ const { primary_light, black } = Colors;
 export const CollectionPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 1rem;
+  margin: 5rem 1rem;
   padding: 1rem;
 `;
 

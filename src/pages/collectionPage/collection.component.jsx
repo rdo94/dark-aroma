@@ -16,19 +16,14 @@ const CollectionPage = ({ collection }) => {
     return (
       <CollectionPageContainer>
         <CollectionTitle>{title}</CollectionTitle>
-        {
-          items.length > 5 ?
-            (<div></div>)
-            :
-          (<CollectionItemsContainer>
+          <CollectionItemsContainer>
           {
             items
               .map((item) => (
                 <CollectionItem key={item.id} item={item} />
             ))
           }
-        </CollectionItemsContainer>)
-        }
+        </CollectionItemsContainer>
       </CollectionPageContainer>
     );
 };

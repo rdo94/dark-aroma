@@ -18,7 +18,7 @@ export const SignUpBox = styled.div`
   width: 38rem;
   height: 10rem;
   display: flex;
-  margin: 0.5rem auto;
+  margin: 5rem auto 3rem auto;
   justify-content: space-around;
   align-items: center;
   background-color: ${black};

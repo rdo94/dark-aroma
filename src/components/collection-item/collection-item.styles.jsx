@@ -7,7 +7,7 @@ import { Colors } from "../../data/color";
 const { primary_light, primary_dark, secondary_light, black, white } = Colors;
 
 export const CollectionItemContainer = styled.div`
-  width: 35%;
+  width: 35vw;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,7 @@ export const CollectionItemContainer = styled.div`
 `;
 
 export const ItemImageContainer = styled.div`
-  width: 80%;
+  width: 30rem;
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -61,15 +61,17 @@ export const ViewButton = styled(CustomButton)``;
 export const AddButton = styled(CustomButton)``;
 
 export const ItemDescription = styled.div`
-  width: 80%;
-  height: 40%;
+  width: 30rem;
+  height: 10rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 0.2rem solid ${secondary_light};
   background-color: ${black};
   border-radius: 0.8rem;
   color: ${primary_light};
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 `;
 
 export const NameContainer = styled.span`
