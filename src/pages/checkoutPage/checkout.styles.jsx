@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { Colors } from "../../data/color";
 
-const { primary_light, secondary_dark, black, white } = Colors;
+const { primary_light, secondary_dark, black, white, light_red_1 } = Colors;
 
 export const CheckoutPageContainer = styled.div`
   width: 75%;
@@ -56,5 +56,5 @@ export const WarningContainer = styled.div`
   text-align: center;
   margin-top: 4rem;
   font-size: 2.4rem;
-  color: red;
+  color: ${light_red_1};
 `;
